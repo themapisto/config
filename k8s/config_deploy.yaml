@@ -4,16 +4,16 @@ metadata:
   name: config
   namespace: springboot
   labels:
-    app2: koo
+    app: nginx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app2: koo
+      app: nginx
   template:
     metadata:
       labels:
-        app2: koo
+        app: nginx
     spec:
       containers:
       - name: config
