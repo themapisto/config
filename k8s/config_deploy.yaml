@@ -4,16 +4,16 @@ metadata:
   name: config
   namespace: springboot
   labels:
-    app: config
+    app: config_server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: config
+      app: config_server
   template:
     metadata:
       labels:
-        app: config
+        app: config_server
     spec:
       containers:
       - name: config
