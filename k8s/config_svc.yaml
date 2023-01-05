@@ -3,7 +3,7 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: springboot
+    app: config
   name: config
   namespace: springboot
 spec:
@@ -12,7 +12,7 @@ spec:
     protocol: TCP
     targetPort: 8088
   selector:
-    app: springboot
+    app: config
   type: ClusterIP
 status:
   loadBalancer: {}
