@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: config
-        image: harbor.aikoo.net/tanzu/config:1.3
+        image: harbor.aikoo.net/tanzu/config:1.4
         ports:
         - containerPort: 8088
